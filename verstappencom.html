@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Unleash The Lion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        nav a{
+            color: black;
+            text-decoration: none;
+        }
+        .image-container{
+            display: inline-block;
+            position: relative;
+        }
+        .overlay-text{
+            position: absolute;
+        }
+        .search-bar{
+            padding-left: 700px;
+            border: white;
+            outline: none;
+        }
+        .search-bar>input{
+            border: none;
+            outline: none;
+            margin: 5px;
+        }
+        .search-bar>cart-logo{
+            margin: 9px;
+            font-size: 3px;
+        }
+        .cart-logo i{
+            font-size: 25px;
+            margin: 20px;
+        }
+        .cart-logo a{
+            text-decoration: none;
+            color: black;
+        }
+        .profile{
+            padding-left: 20px;
+        }
+        .profile i{
+            font-size: 27px;
+        }
+        .profile a{
+            text-decoration: none;
+            color: black;
+        }
+        .wishlist{
+            padding-left: 32px;
+        }
+        .wishlist i{
+            font-size: 25px;
+            color: rgb(18, 17, 17);
+        }
+        nav ul{
+            list-style-type: none;
+        }
+        nav ul ul{
+            display: none;
+            position: absolute;
+            background: white;
+            list-style: none;
+            padding: 15px;
+            z-index: 1000;
+            transform: translateX(-20%);
+        }
+        nav ul ul li{
+            padding: 10px;
+        }
+        nav ul li:hover>ul{
+            display: block;
+            min-width: 50px;
+        }
+        .buy-tickets-btn{
+            position: absolute;
+            top: 450px;
+            left: 40%;
+            transform: translateX(-170%);
+            background: black;
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .overlay-text{
+            font-size: 80px;
+            position: absolute;
+            top: 40%;
+            left: 15%;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <header style="display: flex; align-items: center; color:black; padding: 10px;">
+        <img src="https://res.cloudinary.com/dfr2jmm6x/image/upload/v1757142198/body_picture_1.png" alt="Verstappen Logo" style="width: 50px; height: auto; margin-right: 10px;">
+        <h2 style="margin-left: 60px;"><a href="verstappencom.html" title="Home" style="text-decoration: none; color: black;">Verstappen.com</a></h2>
+
+        <div class="search-bar">
+            <i class="bi bi-search"></i>
+            <input type="text" name="" id="" placeholder="Search for Products" >
+        </div>
+        <div class="cart-logo">
+            <a href=""><i class="bi bi-cart" title="Cart"></i></a>
+        </div>
+        <div class="profile">
+            <a href=""><i class="bi bi-person-fill" title="profile"></i></a>
+        </div>
+        <div class="wishlist">
+            <a href=""><i class="bi bi-heart" title="wishlist"></i></a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="">Clothing</a>
+                <ul>
+                    <li><a href="">T-shirts</a></li>
+                    <li><a href="">Sweatshirts/Hoodies</a></li>
+                    <li><a href="">Jersey's</a></li>
+                    <li><a href="">Jackets</a></li>
+                    <li><a href="">Shoes</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="">Accessories</a>
+                <ul>
+                    <li><a href="">Phone Cases</a></li>
+                    <li><a href=""></a>Zipper Pouches</li>
+                    <li><a href=""></a>Face Mask</li>
+                    <li><a href=""></a>Keychains</li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="">Motorsport Clothing</a>
+                <ul>
+                    <li><a href="">Jersey</a></li>
+                    <li><a href="">Team Hoodies</a></li>
+                    <li><a href=""></a>Caps and Hats</li>
+                    <li><a href=""></a>Gilet</li>
+                    <li><a href=""></a>Luggage Bag</li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="">Collection</a>
+                <ul>
+                    <li><a href="">Red bull Racing Teamline</a></li>
+                    <li><a href="">Red bull Lifestyle</a></li>
+                    <li><a href="">Verstappen X Zandvoort</a></li>
+                    <li><a href="">Unleash The Lion</a></li>
+                    <li><a href="">Verstappen Official Collection</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="image-container">
+        <img src="https://res.cloudinary.com/dfr2jmm6x/image/upload/v1757141101/body_picture_1.jpg" alt="Body picture 1st">
+        <a href="" class="buy-tickets-btn">Tickets For Verstappen Grand Stand</a>
+        <div class="overlay-text">
+            <h1>Verstappen.com</h1>
+            <h1>TICKETS</h1>
+
+        </div>
+    </div>
+    <img style="width: 100%; margin-top: 20px;" src="https://res.cloudinary.com/dfr2jmm6x/image/upload/v1757141827/body_picture_1.jpg" alt="">
+</body>
+</html>
